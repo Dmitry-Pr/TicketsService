@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: booking
+  datasource:
+    url: jdbc:postgresql://database:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:/db/changelog/db.master.yaml
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8082

@@ -1,0 +1,21 @@
+regex:
+  email: ^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$
+  password: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
+
+spring:
+  application:
+    name: auth
+  datasource:
+    url: jdbc:postgresql://database:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:/db/changelog/db.master.yaml
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081
