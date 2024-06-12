@@ -29,3 +29,14 @@ docker-compose up -d
 Остальные данные пользователю предлагается заполнить используя REST API.
 
 ## Коллекция Postman
+
+Доступна по [ссылке](https://www.postman.com/navigation-observer-52281699/workspace/kpoticketingsystem/collection/15266125-7989f32c-e224-431e-ae62-03e1cc3e1eab?action=share&creator=15266125)
+
+## Технологии
+
+- Spring Boot
+- Spring Security
+- JWT
+- Kotlin
+- PostgreSQL
+- Liquibase
